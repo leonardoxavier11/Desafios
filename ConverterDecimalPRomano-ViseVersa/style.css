@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    padding-left: 55px;
+    /* width: 31px;
+    height: 48px; */
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+main {
+    max-width: 1000px;
+    height: 70vh;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .typing #text01{
+    background-color: #E5E5E5;
+    border: none;
+    outline: none;
+    resize: none; /* desabilitar a mobilidade do Textarea */
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #0A3871;
+}
+
+.main .typing #text01::placeholder {
+    color: #0A3871;
+    opacity: 0.5;
+}
+
+.buttons img {
+    padding-left: 15px;
+}
+
+.buttons p {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400px;
+    color: #495057;
+}
+
+.buttons .btn {
+    width: 300px;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+}
+
+.buttons .btn01{
+    background-color: #0A3871;
+    color: white;
+}
+
+.buttons .btn02{
+    background-color: #E5E5E5;
+    border: 1px solid blue;
+    color: blue;
+}
+
+aside img {
+    border-radius: 25px;
+    min-height: 100%;
+    width: 280px;
+}
+
+aside #container-descriptografia {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    min-height: 100%;
+    width: 280px;
+    align-items: center;
+    display: none;
+    padding: 15px 0;
+}
+
+aside p {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align:justify;
+    color: #495057;
+    word-break: break-word; 
+    /* Para quebrar as linhas do parágrafo, mas sem quebrar uma palavra ao meio */
+}
+
+#container-descriptografia .btn04{
+    width: 80%;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+    background-color: #E5E5E5;
+    border: 1px solid blue;
+    color: blue;
+    margin-bottom: 15px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: 0.2s all;
+    transform: scale(0.9); /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); /* Lowering the shadow */
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0A3871;
+
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
