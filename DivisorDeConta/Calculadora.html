@@ -24,21 +24,41 @@
 </head>
 
 <body>
-    <!--Main Navigation-->
-    <header>
+    <div class="container-fluid d-flex p-0">
         <!-- Sidebar -->
-        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
-            <div class="position-sticky">
-                <div class="list-group list-group-flush mx-3 mt-4">
-                    <a href="./Produtos.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-calendar fa-fw me-3"></i><span>Produtos</span></a>
-                    <a href="./Clientes.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-users fa-fw me-3"></i><span>Clientes</span></a>
-                </div>
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white navbar">
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="./Produtos.html" class="list-group-item list-group-item-action py-2 ripple"><i
+                        class="fas fa-calendar fa-fw me-3"></i><span>Produtos</span></a>
+                <a href="./Clientes.html" class="list-group-item list-group-item-action py-2 ripple"><i
+                        class="fas fa-users fa-fw me-3"></i><span>Clientes</span></a>
+                <a href="./Instrucoes.html" class="list-group-item list-group-item-action py-2 ripple"><i
+                        class="fas fa-money-bill fa-fw me-3"></i><span>Instruções</span></a>
             </div>
         </nav>
 
+        <div class="container vh-100">
+            <!-- main -->
+            <h1 class="mt-4">Resumo da Conta do Restaurante</h1>
+
+            <div class="form-group h-100">
+                <label for="myTextarea">Informações Totais:</label>
+                <textarea class="form-control rounded" id="myTextarea" disabled></textarea>
+            </div>
+
+            <!-- Fazer um botão para copiar os dados do textArea -->
+            <!-- <button type="button" class="btn btn-primary" onclick="copiarDados()">Criar
+            Formulários</button> -->
+
+            <div id="formularios" class="mt-3"></div>
+
+        </div>
+
         <script src="./script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', criarCalculadora);
+        </script>
+    </div>
 </body>
 
 </html>

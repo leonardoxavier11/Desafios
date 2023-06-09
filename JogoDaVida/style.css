@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container {
+    background-image: url(./istockphoto-178149253-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.cell.alive {
+    background-color: yellow;
+}

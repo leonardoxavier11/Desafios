@@ -20,7 +20,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <title>Produtos</title>
+    <title>Instruções</title>
 </head>
 
 <body>
@@ -29,39 +29,33 @@
         <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white navbar">
             <div class="position-sticky">
                 <div class="list-group list-group-flush mx-3 mt-4">
+                    <a href="./Produtos.html" class="list-group-item list-group-item-action py-2 ripple"><i
+                            class="fas fa-calendar fa-fw me-3"></i><span>Produtos</span></a>
                     <a href="./Clientes.html" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-users fa-fw me-3"></i><span>Clientes</span></a>
                     <a href="./Calculadora.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-users fa-fw me-3"></i><span>Calculadora</span></a>
-                    <a href="./Instrucoes.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-users fa-fw me-3"></i><span>Instruções</span></a>
+                            class="fas fa-money-bill fa-fw me-3"></i><span>Calculadora</span></a>
                 </div>
             </div>
         </nav>
 
         <div class="container vh-100">
             <!-- main -->
-            <h1 class="mt-4">Formulário de Cadastro dos Produtos Consumidos na Mesa</h1>
+            <h1 class="mt-4 mb-5">Instruções</h1>
 
-            <div class="form-group">
-                <label for="quantidadeProdutos">Quantidade de Tipos de Produtos Consumidos:</label>
-                <input type="number" class="form-control" id="quantidadeProdutos" min="1">
+            <div class="form-group h-100">
+                <ol>
+                    <li>Utilize o SideBar, à esquerda, para interagir entre as telas.</li>
+                    <li>Sempre inicie cadastrando os Produtos.</li>
+                    <li>Após os Produtos, cadastre os Clientes.</li>
+                    <li>Por fim, visualize a tela da Calculadora. O resultado será mostrado automaticamente.</li>
+                </ol>
             </div>
-
-            <button type="button" class="btn btn-primary" onclick="criarFormulariosProdutos()">Cadastrar Informações dos
-                Produtos Consumidos</button>
-
-            <div id="formularios" class="mt-3"></div>
-
-
 
         </div>
 
-        <script>
-
-        </script>
-
         <script src="./script.js"></script>
+
 </body>
 
 </html>
