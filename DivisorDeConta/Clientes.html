@@ -26,20 +26,40 @@
 <body>
     <div class="container-fluid d-flex p-0">
         <!-- Sidebar -->
-        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white navbar">
-            <div class="position-sticky">
+        <nav id="sidebarMenu"
+            class="sidebar navbar navbar-expand-md navbar-light d-flex flex-column align-items-center flex-nowrap bg-white ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-column align-items-start" id="navbarCollapse">
                 <div class="list-group list-group-flush mx-3 mt-4">
-                    <a href="./Calculadora.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-money-bill fa-fw me-3"></i><span>Calculadora</span></a>
-                    <a href="./Produtos.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-calendar fa-fw me-3"></i><span>Produtos</span></a>
-                    <a href="./Instrucoes.html" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-money-bill fa-fw me-3"></i><span>Instruções</span></a>
+                    <ul class="navbar-nav ml-auto d-block">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Calculadora.html"
+                                class="list-group-item list-group-item-action py-2 ripple"><i
+                                    class="fas fa-calendar fa-fw me-3"></i><span>Calculadora</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Produtos.html"
+                                class="list-group-item list-group-item-action py-2 ripple"><i
+                                    class="fas fa-users fa-fw me-3"></i><span>Produtos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Instrucoes.html"
+                                class="list-group-item list-group-item-action py-2 ripple"><i
+                                    class="fas fa-money-bill fa-fw me-3">
+                                </i><span>Instrucoes</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
         </nav>
 
-        <div class="container vh-100">
+
+        <!-- main -->
+        <main class="container vh-100">
             <!-- main -->
             <h1 class="mt-4">Formulário de Cadastro dos Clientes na Mesa</h1>
 
@@ -53,7 +73,7 @@
 
             <div id="formularios" class="mt-3"></div>
 
-        </div>
+        </main>
 
         <script>
 
