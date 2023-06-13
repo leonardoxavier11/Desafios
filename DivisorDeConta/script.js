@@ -242,3 +242,14 @@ function criarCalculadora() {
     textarea.innerHTML = conteudoFormatado;
 }
 
+function sideBarActive() {
+    let sideBar = document.querySelector('#sidebarMenu');
+    sideBar.classList.toggle('active');
+    sideBar.classList.toggle('bg-white');
+    buttonActive();
+}
+
+function buttonActive() {
+    let btn = document.querySelector('button');
+    btn.classList.toggle('ml-5');
+}
