@@ -252,4 +252,5 @@ function sideBarActive() {
 function buttonActive() {
     let btn = document.querySelector('button');
     btn.classList.toggle('ml-5');
+    btn.classList.toggle('bg-white');
 }

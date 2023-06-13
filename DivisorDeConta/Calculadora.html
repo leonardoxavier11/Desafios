@@ -26,9 +26,10 @@
 <body>
     <div class="container-fluid d-flex p-0">
         <!-- Sidebar -->
-        <nav id="sidebarMenu"
-            class="sidebar navbar navbar-expand-md navbar-light d-flex flex-column align-items-center flex-nowrap bg-white ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <!-- Retirei o navbar navbar-expand-md e bg-white -->
+        <nav id="sidebarMenu" class="sidebar navbar-light d-flex flex-column align-items-center flex-nowrap">
+            <button class="navbar-toggler ml-5 bg-white" type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" onclick="sideBarActive()">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse flex-column align-items-start" id="navbarCollapse">
